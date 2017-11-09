@@ -6,3 +6,14 @@ function distanceFromHqInBlocks(x){
     return 42 - x
   }
 }
+
+function distanceFromHqInFeet(d){
+  return distanceFromHqInBlocks(d) * 264
+}
+
+function distanceTravelledInFeet(a, b){
+  if( a > b){
+    return (a - b) * 264
+  } else
+    return (b - a) * 264
+}
